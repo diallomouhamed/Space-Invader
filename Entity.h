@@ -25,7 +25,7 @@ public:
 	bool m_enabled = true;
 
 	// Enemy only
-	bool m_bLeftToRight = true;
+	bool m_bTopToBottom = true;
 	int m_times = 0;
 };
 

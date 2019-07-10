@@ -1,8 +1,8 @@
 #pragma once
 #include "Weapon.h"
 
-#define SPRITE_COUNT_X 8
-#define SPRITE_COUNT_Y 2
+#define SPRITE_COUNT_X 1
+#define SPRITE_COUNT_Y 8
 #define BLOCK_COUNT 4
 
 class Game
@@ -54,6 +54,7 @@ private:
 	sf::Text	mText;
 	sf::Text	_LivesText;
 	int _lives = 3;
+	int _ennemyMasterPointsOfLife = 300;
 	sf::Text	_ScoreText;
 	int _score = 0;
 
@@ -67,6 +68,8 @@ private:
 	bool _IsEnemyWeaponFired = false;
 	bool _IsPlayerWeaponFired = false;
 	bool _IsEnemyMasterWeaponFired = false;
+
+	int nbWeapon = 0;
 
 	sf::Texture	_TextureEnemy;
 	sf::Sprite	_Enemy[SPRITE_COUNT_X][SPRITE_COUNT_Y];
