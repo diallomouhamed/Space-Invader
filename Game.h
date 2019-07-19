@@ -35,6 +35,7 @@ private:
 	void HandleCollisionWeaponBlock();
 	void HandleCollisionWeaponEnemy();
 	void HandleCollisionWeaponEnemyMaster();
+	void HandleCollisionPlayerBlock();			// fonction ajoutée
 	void HandleGameOver();
 	void DisplayGameOver();
 	void handlePlayerInput(sf::Keyboard::Key key, bool isPressed);
